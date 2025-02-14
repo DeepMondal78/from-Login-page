@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login | Register</title>
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+
+    <div class="wrapper">
+
+        <!--------------------Login Form------------------------->
+
+        <div class="form-box login">
+            <span class="icon-close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+
+            <form action="">
+                <h1>Login</h1>
+                <div class="input_box">
+                    <input type="text" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" id="password" placeholder="password" required autocomplete="">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div div class="password_show">
+                    <p>Use securly password</p>
+                    <p id="pass_text">Pc%3$!gh*?@</p>
+                </div>
+                <div class="remember_forgot">
+                    <label><input type="checkbox" id="checkBox">Remember Me</label>
+                    <a href="#">Forget Password</a>
+                </div>
+                <button type="submit" class="login_btn">Login</button>
+                <div class="registerLink">
+                    <p>Dont have an account? <a href="#" id="register_now">Register Now!</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!----------------Register Form---------------------->
+        <div class="form-box register">
+            <span class="icon-close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <form action="">
+                <h1>Register</h1>
+                <div class="input_box">
+                    <input type="text" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input_box">
+                    <input type="password" id="user-password" placeholder="password" required autocomplete="">
+                    <i class="fa-solid fa-eye" id="fa-eye-first"></i>
+                    <i class="fa-solid fa-eye-slash" id="fa-eye-slash-first"></i> 
+                    <p class="alert-text">Minimum Password 8 Character</p>
+                </div>
+                <div class="input_box">
+                    <input type="password" id="conform-password" placeholder="Conform password" required
+                        autocomplete="">
+                    <i class="fa-solid fa-eye" id="fa-eye-second"></i>
+                    <i class="fa-solid fa-eye-slash" id="fa-eye-slash-second"></i>
+                </div>
+              
+                <div class="remember_forgot">
+                    <label><input type="checkbox" id="check_Box">I agree all the terms and conditions <a href="#">click</a></label>
+                   
+                </div>
+                <button type="submit" class="register_btn">Register</button>
+                <div class="loginLink">
+                    <p>You have an account? <a href="#" id="login_now">Login Now!</a></p>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
